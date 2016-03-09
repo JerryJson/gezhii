@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_small">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/sun"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_26" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/mon"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_26" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tues"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_26" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/wednes"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_26" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/thurs"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_26" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/fri"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_26" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/satur"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_26" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_40" />
+
+    <LinearLayout
+        android:id="@+id/day_text_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_small">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="@dimen/button_height_shorter"
+                android:layout_height="@dimen/button_height_shorter"
+                android:layout_gravity="center"
+                android:background="@drawable/time_table_item_oval_selector"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_28"
+                tools:text="12" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="@dimen/button_height_shorter"
+                android:layout_height="@dimen/button_height_shorter"
+                android:layout_gravity="center"
+                android:background="@drawable/time_table_item_oval_selector"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_28"
+                tools:text="12" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="@dimen/button_height_shorter"
+                android:layout_height="@dimen/button_height_shorter"
+                android:layout_gravity="center"
+                android:background="@drawable/time_table_item_oval_selector"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_28"
+                tools:text="12" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="@dimen/button_height_shorter"
+                android:layout_height="@dimen/button_height_shorter"
+                android:layout_gravity="center"
+                android:background="@drawable/time_table_item_oval_selector"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_28"
+                tools:text="12" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="@dimen/button_height_shorter"
+                android:layout_height="@dimen/button_height_shorter"
+                android:layout_gravity="center"
+                android:background="@drawable/time_table_item_oval_selector"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_28"
+                tools:text="12" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="@dimen/button_height_shorter"
+                android:layout_height="@dimen/button_height_shorter"
+                android:layout_gravity="center"
+                android:background="@drawable/time_table_item_oval_selector"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_28"
+                tools:text="12" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="@dimen/button_height_shorter"
+                android:layout_height="@dimen/button_height_shorter"
+                android:layout_gravity="center"
+                android:background="@drawable/time_table_item_oval_selector"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_28"
+                tools:text="12" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

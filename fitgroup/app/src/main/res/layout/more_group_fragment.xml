@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/page_bg"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <include layout="@layout/title_view" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/spacing_normal"
+            android:paddingLeft="@dimen/spacing_normal"
+            android:paddingRight="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle_white">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginRight="@dimen/spacing_tiny"
+                    android:src="@mipmap/search_icon" />
+
+                <TextView
+                    android:id="@+id/search_group_input"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_input_group_name_or_number"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/scanner_qr_code_btn"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/qr_code_icon" />
+        </LinearLayout>
+
+
+        <com.gezhii.fitgroup.ui.view.LoadMoreListView
+            android:id="@+id/group_tags_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/page_bg">
+
+        </com.gezhii.fitgroup.ui.view.LoadMoreListView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

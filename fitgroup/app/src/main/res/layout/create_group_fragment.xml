@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_view" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_layout"
+        android:background="@color/page_bg"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_normal">
+
+            <LinearLayout
+                android:id="@+id/group_base_inf_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/group_name"
+                    android:textColor="@color/gray_97"
+                    android:textSize="@dimen/text_size_26" />
+
+                <EditText
+                    android:id="@+id/group_name_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/button_height_normal"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:background="@drawable/rounded_rectangle_white"
+                    android:padding="@dimen/spacing_small"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_28"
+                    tools:text="测试工会" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:text="@string/group_introduce"
+                    android:textColor="@color/gray_97"
+                    android:textSize="@dimen/text_size_26" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:background="@drawable/rounded_rectangle_white">
+
+                    <EditText
+                        android:id="@+id/group_introduce_input"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/transparent"
+                        android:gravity="top|left"
+                        android:padding="@dimen/spacing_small"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_28"
+                        tools:text="测试工会" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/group_tags_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:text="公会标签（最多选择3项）"
+                    android:textColor="@color/gray_97"
+                    android:textSize="@dimen/text_size_26" />
+
+                <com.gezhii.fitgroup.ui.view.TagsView
+                    android:id="@+id/group_tags_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/group_create_done"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pink_ff"
+        android:gravity="center"
+        android:text="@string/create"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_32" />
+</RelativeLayout>

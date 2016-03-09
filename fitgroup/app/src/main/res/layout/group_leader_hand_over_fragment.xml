@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg">
+
+    <include layout="@layout/title_view"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="17dp"
+            android:src="@mipmap/body_q" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="47dp"
+            android:text="会长大人，你是要去开拓新的大陆了吗?退出公会前请先任命下一任会长"
+            android:textColor="@color/black_32"
+            android:textSize="@dimen/text_size_28"/>
+    </LinearLayout>
+
+    <com.gezhii.fitgroup.ui.view.LoadMoreListView
+        android:id="@+id/group_member_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

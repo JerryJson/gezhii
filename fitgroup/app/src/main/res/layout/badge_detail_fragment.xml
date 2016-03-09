@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/badge_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_80"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:padding="7dp"
+            android:src="@mipmap/bmi_close" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="88dp">
+
+        <LinearLayout
+            android:id="@+id/badge_share_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="335dp"
+                android:layout_height="335dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@color/white">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/badge_bg_img"
+                        android:layout_width="335dp"
+                        android:layout_height="105dp"
+                        android:src="@drawable/rounded_rectangle_7_white" />
+
+                    <TextView
+                        android:id="@+id/badge_text"
+                        android:layout_width="81dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="160dp"
+                        android:background="@mipmap/black_bottom"
+                        android:gravity="center"
+                        android:text="谷神星"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_28" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="35dp">
+
+                        <ImageView
+                            android:id="@+id/badge_img"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:background="@mipmap/white_circle_bg"
+                            android:padding="2dp"
+                            android:src="@mipmap/test" />
+
+                        <ImageView
+                            android:id="@+id/lock_badge_img"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:padding="2dp"
+                            android:src="@mipmap/gray_circle_lock" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/badge_information_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="243dp"
+                    android:gravity="center"
+                    android:text="人类发现的第一颗小行星,以农业女神克瑞斯(Ceres)命名"
+                    android:textColor="@color/black_32"
+                    android:textSize="@dimen/text_size_28" />
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/lock_img"
+                        android:layout_width="12dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/lock_shape" />
+
+                    <TextView
+                        android:id="@+id/unlock_condition_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="解锁条件:完善资料"
+                        android:textColor="@color/gray_97"
+                        android:textSize="@dimen/text_size_24" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/badge_share_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
+
+                <include layout="@layout/share_bottom_item" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/share_to_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/share_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="分享到"
+                android:textColor="@color/gray_97"
+                android:textSize="@dimen/text_size_24" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/share_text"
+                android:src="@mipmap/dotted_line" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/share_text"
+                android:src="@mipmap/dotted_line" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/wechat_img"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_margin="13dp"
+                android:src="@mipmap/wechat" />
+
+            <ImageView
+                android:id="@+id/wechat_moment_img"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_margin="13dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@mipmap/wechat_zone" />
+
+            <ImageView
+                android:id="@+id/sina_weibo_img"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_margin="13dp"
+                android:src="@mipmap/weibo" />
+
+            <ImageView
+                android:id="@+id/qq_img"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_margin="13dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:src="@mipmap/qq" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

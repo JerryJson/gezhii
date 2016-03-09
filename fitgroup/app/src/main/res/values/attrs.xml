@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Line">
+
+        <!-- 线方式 -->
+        <attr name="line_mode">
+            <enum name="normal" value="0" />
+            <enum name="dash" value="1" />
+        </attr>
+        <!-- 颜色 -->
+        <attr name="line_color" format="color" />
+    </declare-styleable>
+
+    <style name="DivLine">
+        <item name="line_mode">dash</item>
+        <item name="line_color">#FF000000</item>
+    </style>
+
+    <style name="rect_line">
+        <item name="line_mode">dash</item>
+        <item name="line_color">#FF9B9B9B</item>
+    </style>
+
+
+    <!-- 定义初始默认值 -->
+    <dimen name="ri_radius_default">6dip</dimen>
+    <dimen name="ri_border_width_default">0dip</dimen>
+
+    <color name="ri_border_color_default">#FF000000</color>
+    <bool name="ri_is_oval_default">false</bool>
+
+    <declare-styleable name="RectImageView">
+
+        <!-- 弧度 -->
+        <attr name="ri_radius" format="dimension" />
+        <!-- 图片原始宽度 -->
+        <attr name="ri_base_width" format="integer" />
+        <!-- 图片原始高度 -->
+        <attr name="ri_base_height" format="integer" />
+        <!-- 边框宽度 -->
+        <attr name="ri_border_width" format="dimension" />
+        <!-- 边框颜色 -->
+        <attr name="ri_border_color" format="color" />
+        <!-- 是否为圆形 -->
+        <attr name="ri_is_oval" format="boolean" />
+
+        <!-- 居中方式 -->
+        <attr name="android:scaleType" />
+        <!-- 背景 -->
+        <attr name="android:background" />
+        <!-- 图片 -->
+        <attr name="android:src" />
+    </declare-styleable>
+
+    <!-- 默认样式 -->
+    <style name="DivRectImageView">
+        <item name="ri_radius">@dimen/ri_radius_default</item>
+        <item name="ri_base_width">0</item>
+        <item name="ri_base_height">0</item>
+        <item name="ri_border_width">@dimen/ri_border_width_default</item>
+        <item name="ri_border_color">@color/ri_border_color_default</item>
+        <item name="ri_is_oval">@bool/ri_is_oval_default</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+
+
+</resources>

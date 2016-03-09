@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp">
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/share_to_third_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/share_close_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@mipmap/share_close" />
+
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="57dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                    <ImageView
+                        android:id="@+id/group_profile_mask_img"
+                        android:layout_width="fill_parent"
+                        android:layout_height="125dp"
+                        android:scaleType="centerCrop" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="125dp"
+                        android:background="@color/black_60" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_34"
+                            tools:text="我是菇凉,我有肌肉" />
+
+                        <TextView
+                            android:id="@+id/group_leader_info_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_24"
+                            tools:text="会长:丁丁  公会号:384720" />
+
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="38dp"
+                                android:background="@color/white" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingBottom="12dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp">
+
+                                <com.gezhii.fitgroup.ui.view.RectImageView
+                                    android:id="@+id/group_leader_icon_img"
+                                    style="@style/oval_img_style"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_gravity="center"
+                                    tools:src="@mipmap/ic_launcher" />
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="63dp"
+                                    android:layout_marginRight="63dp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@drawable/rounded_rectangle_white"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/group_level_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_64"
+                                            tools:text="3" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="13dp"
+                                            android:text="公会等级"
+                                            android:textColor="@color/gray_9b"
+                                            android:textSize="@dimen/text_size_22" />
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="@color/white" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/group_activeness_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_size_64"
+                                            tools:text="80%" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="13dp"
+                                            android:text="活跃度"
+                                            android:textColor="@color/gray_9b"
+                                            android:textSize="@dimen/text_size_22" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@color/green_D8" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="14dp"
+                                    android:text="公会介绍"
+                                    android:textColor="@color/gray_9b"
+                                    android:textSize="@dimen/text_size_24" />
+
+                                <TextView
+                                    android:id="@+id/group_description_text"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="95dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_28"
+                                    tools:text="测试数据数据.." />
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@color/green_D8" />
+
+                                <TextView
+                                    android:id="@+id/group_number_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="12dp"
+                                    android:layout_marginTop="12dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_28"
+                                    tools:text="公会号: 45678930" />
+
+                                <ImageView
+                                    android:id="@+id/group_qrcode_img"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_gravity="center"
+                                    tools:src="@mipmap/ic_launcher" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <include
+                    layout="@layout/share_bottom_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="35dp"
+        android:paddingRight="14dp">
+
+        <ImageView
+            android:id="@+id/share_wechat_img"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/wechat" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/share_wechat_zone_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/wechat_zone" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/share_weibo_img"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/weibo" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/share_qq_img"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/qq" />
+
+        <TextView
+            android:id="@+id/img_save_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:text="保存到本地"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_34" />
+    </LinearLayout>
+
+</RelativeLayout>

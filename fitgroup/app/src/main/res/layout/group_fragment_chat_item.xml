@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/button_height_taller"
+    android:orientation="horizontal">
+
+    <com.gezhii.fitgroup.ui.view.RectImageView
+        android:id="@+id/user_icon_img"
+        style="@style/oval_img_style"
+        android:layout_width="@dimen/button_height_normal"
+        android:layout_height="@dimen/button_height_normal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/spacing_normal" />
+
+    <FrameLayout
+        android:id="@+id/group_chat_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/spacing_tiny"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginBottom="5dp"
+        android:background="@mipmap/group_fragment_chat">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:id="@+id/user_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_24"
+                tools:text="QIQI" />
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:id="@+id/user_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/gray_97"
+                android:textSize="@dimen/text_size_28"
+                tools:text="坚持才能有效果" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

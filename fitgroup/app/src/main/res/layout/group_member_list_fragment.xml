@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_view" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="66dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="11dp"
+                android:src="@mipmap/my_group_contribution_pic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我在公会中的排名"
+                android:textColor="@color/black_32"
+                android:textSize="@dimen/text_size_30"
+                tools:text="我在公会中的排名" />
+
+            <TextView
+                android:id="@+id/my_contribution_sort_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:textColor="@color/black_32"
+                android:textSize="@dimen/text_size_44"
+                android:textStyle="bold"
+                tools:text="5" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_ea" />
+
+        <com.gezhii.fitgroup.ui.view.LoadMoreListView
+            android:id="@+id/group_member_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/long_click_delete_group_member_layout"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="@color/pink_ff"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="27dp"
+            android:text="@string/long_click_delete_group_member"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_40" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="4" />
+
+        <ImageView
+            android:id="@+id/long_click_delete_group_member_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:padding="15dp"
+            android:src="@mipmap/share_close" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</FrameLayout>

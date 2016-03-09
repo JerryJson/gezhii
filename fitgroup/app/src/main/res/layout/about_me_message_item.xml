@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/about_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/sender_icon_layout"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="12dp">
+
+            <com.gezhii.fitgroup.ui.view.RectImageView
+                android:id="@+id/sender_user_icon"
+                style="@style/oval_img_style"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <com.gezhii.fitgroup.ui.view.RectImageView
+                android:id="@+id/sender_vip_icon"
+                style="@style/oval_img_style"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/vip_medal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@+id/sender_icon_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sender_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Tired"
+                android:textColor="@color/black_32"
+                android:textSize="@dimen/text_size_30" />
+
+            <TextView
+                android:id="@+id/send_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="外星人评论了你"
+                android:textColor="@color/gray_97"
+                android:textSize="@dimen/text_size_28" />
+
+            <TextView
+                android:id="@+id/send_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="2016年2月21日"
+                android:textColor="@color/gray_c8"
+                android:textSize="@dimen/text_size_24" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle_gray_c8"
+    android:orientation="vertical"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingTop="80dp">
+
+    <TextView
+        android:id="@+id/level_state_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解锁中"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_24" />
+
+    <TextView
+        android:id="@+id/level_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="4级公会"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_64" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/award" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="特权"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_28" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/group_level_max_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公会成员上限200人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_28" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/lock" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="解锁条件"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_28" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/group_upgrade_condition_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连续21天,打卡人数超过50人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_28" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/progress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="升级进度"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="(中断会导致进度归零)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_24" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/progress_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/current_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/current_size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_pink"
+            android:gravity="center"
+            android:text="145"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_24"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <com.gezhii.fitgroup.ui.view.ProgressView
+            android:id="@+id/progress_view"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/current_grade_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:gravity="center"
+                android:text="0天"
+                android:textColor="@color/gray_97"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:id="@+id/next_grade_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:gravity="center"
+                android:textColor="@color/gray_97"
+                android:textSize="@dimen/text_size_24"
+                tools:text="21天" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg">
+
+    <include layout = "@layout/title_view"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="@dimen/spacing_normal"
+        android:paddingRight="12dp"
+        android:paddingBottom="@dimen/spacing_normal"
+        android:orientation="horizontal">
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_rectangle_white">
+            
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src = "@mipmap/search_icon"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_small"
+                android:layout_marginRight="@dimen/spacing_tiny"/>
+
+            <TextView
+                android:id="@+id/search_group_input"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_24"
+                android:hint="@string/hint_input_group_name_or_number"/>
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/scanner_qr_code_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="16dp"
+            android:src = "@mipmap/qr_code_icon"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/card_list_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

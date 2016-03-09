@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_30">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/spacing_huge"
+        android:layout_marginRight="@dimen/spacing_huge"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_normal">
+
+        <TextView
+            android:id="@+id/share_to"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingLeft="@dimen/spacing_huge"
+            android:paddingRight="@dimen/spacing_huge"
+            android:paddingTop="6dp"
+            android:text="分享到:"
+            android:textColor="@color/gray_97"
+            android:textSize="@dimen/text_size_30" />
+
+        <TextView
+            android:id="@+id/wechat"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/rounded_rectangle_gray_frame_bg_white"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingLeft="@dimen/spacing_huge"
+            android:paddingRight="@dimen/spacing_huge"
+            android:paddingTop="12dp"
+            android:text="微信"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_30" />
+
+        <TextView
+            android:id="@+id/wechat_moment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:background="@drawable/rounded_rectangle_gray_frame_bg_white"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingLeft="@dimen/spacing_huge"
+            android:paddingRight="@dimen/spacing_huge"
+            android:paddingTop="12dp"
+            android:text="朋友圈"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_30" />
+
+        <TextView
+            android:id="@+id/weibo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:background="@drawable/rounded_rectangle_gray_frame_bg_white"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingLeft="@dimen/spacing_huge"
+            android:paddingRight="@dimen/spacing_huge"
+            android:paddingTop="12dp"
+            android:text="微博"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_30" />
+
+        <TextView
+            android:id="@+id/qq"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:background="@drawable/rounded_rectangle_gray_frame_bg_white"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingLeft="@dimen/spacing_huge"
+            android:paddingRight="@dimen/spacing_huge"
+            android:paddingTop="12dp"
+            android:text="QQ"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_30" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:background="@drawable/rounded_rectangle_gray_frame_bg_white"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingLeft="@dimen/spacing_huge"
+            android:paddingRight="@dimen/spacing_huge"
+            android:paddingTop="12dp"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_30" />
+    </LinearLayout>
+
+</FrameLayout>

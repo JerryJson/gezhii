@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_view" />
+
+    <LinearLayout
+        android:id="@+id/plan_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue_3a"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/head_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="=怪咖女人 今天还在努力运动"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_24" />
+
+        <com.gezhii.fitgroup.ui.view.RectImageView
+            android:id="@+id/head_icon"
+            style="@style/oval_img_style"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/head_change_layout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.gezhii.fitgroup.ui.view.RectImageView
+            android:id="@+id/head_change_icon"
+            style="@style/oval_img_style"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="TA闭关修炼去了？"
+            android:textColor="@color/black_32"
+            android:textSize="@dimen/text_size_34" />
+
+        <TextView
+            android:id="@+id/head_change_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="怪咖女人"
+            android:textColor="@color/gray_9b"
+            android:textSize="@dimen/text_size_22" />
+
+        <LinearLayout
+            android:id="@+id/head_change_mentor_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:src="@mipmap/change_mentor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="换人"
+                android:textColor="@color/pink_ff"
+                android:textSize="@dimen/text_size_34" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.gezhii.fitgroup.ui.view.LoadMoreListView
+        android:id="@+id/plan_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

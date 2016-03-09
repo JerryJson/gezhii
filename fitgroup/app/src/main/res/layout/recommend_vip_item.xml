@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp">
+
+    <LinearLayout
+        android:id="@+id/vip_user_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_item_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp">
+
+                <com.gezhii.fitgroup.ui.view.RectImageView
+                    android:id="@+id/user_list_icon"
+                    style="@style/oval_img_style"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <com.gezhii.fitgroup.ui.view.RectImageView
+                    android:id="@+id/user_list_vip"
+                    style="@style/oval_img_style"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right|bottom"
+                    android:src="@mipmap/vip_medal" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/user_list_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/user_list_following_count"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="Automan"
+                        android:textColor="@color/black_32"
+                        android:textSize="@dimen/text_size_34" />
+
+                    <TextView
+                        android:id="@+id/user_list_following_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/whether_follow_btn_bg"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="关注 23"
+                        android:textColor="@color/pink_ff" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_list_desc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="80后,某互联网产品总监，坚持一周四次健身，保持良好的身材"
+            android:textColor="@color/gray_97"
+            android:textSize="@dimen/text_size_28" />
+
+    </LinearLayout>
+
+</LinearLayout>

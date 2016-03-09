@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg">
+
+    <include layout="@layout/title_view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="公会名称"
+        android:textColor="@color/gray_97"
+        android:textSize="@dimen/text_size_26" />
+
+    <TextView
+        android:id="@+id/group_name_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_28"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="公会介绍"
+        android:textColor="@color/gray_97"
+        android:textSize="@dimen/text_size_26" />
+
+    <TextView
+        android:id="@+id/group_description_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_28"
+        android:background="@color/white"
+        android:maxLines="100"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="公会标签"
+        android:textColor="@color/gray_97"
+        android:textSize="@dimen/text_size_26" />
+
+    <com.gezhii.fitgroup.ui.view.TagsView
+    android:id="@+id/tags_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+</LinearLayout>

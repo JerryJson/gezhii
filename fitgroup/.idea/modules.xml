@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BQMM_Lib/BQMM_Lib.iml" filepath="$PROJECT_DIR$/BQMM_Lib/BQMM_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fitgroup.iml" filepath="$PROJECT_DIR$/fitgroup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lite_common/lite_common.iml" filepath="$PROJECT_DIR$/lite_common/lite_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/share_sdk/share_sdk.iml" filepath="$PROJECT_DIR$/share_sdk/share_sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/togglebutton/togglebutton.iml" filepath="$PROJECT_DIR$/togglebutton/togglebutton.iml" />
+    </modules>
+  </component>
+</project>

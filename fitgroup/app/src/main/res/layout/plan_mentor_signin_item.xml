@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/mentor_signin_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mentor_signin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/mentor_signin_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="每日一万步"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_34" />
+
+        <TextView
+            android:id="@+id/mentor_signin_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:text="昨天19：00"
+            android:textColor="@color/gray_c8"
+            android:textSize="@dimen/text_size_24" />
+
+        <LinearLayout
+            android:id="@+id/video_course_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/video_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="@string/video_course"
+                android:textColor="@color/gray_c8"
+                android:textSize="@dimen/text_size_26" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/mentor_signin_desc"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/mentor_signin_img"
+                android:layout_toLeftOf="@+id/mentor_signin_img"
+                android:gravity="bottom"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="这里是打卡的文字感想,只能显示一行,嗯,再多的感想也只给你显示这么一点"
+                android:textColor="@color/gray_9b"
+                android:textSize="@dimen/text_size_28" />
+
+            <ImageView
+                android:id="@+id/mentor_signin_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/photo_default" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mentor_rest_layout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/rest_icon" />
+
+            <TextView
+                android:id="@+id/mentor_rest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="休息"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_34" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mentor_rest_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:text="昨天19：00"
+            android:textColor="@color/gray_c8"
+            android:textSize="@dimen/text_size_24" />
+    </LinearLayout>
+</LinearLayout>

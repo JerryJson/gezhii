@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/button_height_tall"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/sport_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/spacing_small"
+        tools:src="@mipmap/count" />
+
+    <TextView
+        android:id="@+id/sport_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_26"
+        tools:text="慢跑" />
+
+    <TextView
+        android:id="@+id/sport_params"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_28"
+        tools:text="慢跑" />
+
+    <ImageView
+        android:id="@+id/sport_remove"
+        android:layout_width="@dimen/button_height_tiny"
+        android:layout_height="@dimen/button_height_tiny"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:src="@mipmap/sign_remove" />
+
+
+</LinearLayout>

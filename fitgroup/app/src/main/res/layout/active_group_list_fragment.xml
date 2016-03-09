@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg">
+
+    <include layout = "@layout/title_view"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:id="@+id/my_group_active_layout">
+        
+        <ImageView
+            android:layout_width="76dp"
+            android:layout_height="55dp"
+            android:src="@mipmap/my_group_activeness_pic"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="24dp"/>
+
+        <TextView
+            android:id="@+id/my_group_activeness_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="我的公会活跃度76%排名"
+            android:textSize="@dimen/text_size_30"
+            android:textColor="@color/black_32"/>
+
+        <TextView
+            android:id="@+id/my_group_activeness_sort_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            tools:text="5"
+            android:textSize="@dimen/text_size_44"
+            android:textColor="@color/black_32"
+            android:layout_marginRight="35dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <com.gezhii.fitgroup.ui.view.LoadMoreListView
+        android:id="@+id/active_group_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/user_more_mission"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/user_signin_bg"
+        android:gravity="center">
+
+        <com.gezhii.fitgroup.ui.view.RectImageView
+            style="@style/oval_img_style"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/more_mission_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="加练"
+            android:textColor="@color/blue_3a"
+            android:textSize="@dimen/text_size_28" />
+
+    </LinearLayout>
+</LinearLayout>

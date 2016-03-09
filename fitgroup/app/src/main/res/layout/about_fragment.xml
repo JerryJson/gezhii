@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/page_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_view" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65dp"
+        android:src="@mipmap/logo_img" />
+
+    <TextView
+        android:id="@+id/vision_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="轻元素 1.0"
+        android:textColor="@color/gray_97"
+        android:textSize="@dimen/text_size_30" />
+
+    <LinearLayout
+        android:id="@+id/update_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/icon_update" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/update_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="更新版本: 1.1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_30" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/allrights_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:text="All Rights Reserved."
+            android:textColor="@color/gray_97"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:id="@+id/gezhi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/allrights_text"
+            android:layout_centerHorizontal="true"
+            android:text="Copyright © 2015 Gezhii."
+            android:textColor="@color/gray_97"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/gezhi_text"
+            android:layout_centerHorizontal="true"
+            android:text="歌志网络 版权所有"
+            android:textColor="@color/gray_97"
+            android:textSize="@dimen/text_size_24" />
+
+
+    </RelativeLayout>
+</LinearLayout>

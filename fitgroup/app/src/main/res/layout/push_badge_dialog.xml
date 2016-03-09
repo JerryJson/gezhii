@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_black"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="13dp"
+        android:src="@mipmap/share_close" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/gold_coin" />
+
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_size_30"
+            tools:text="+12轻元素，升级为3级！" />
+
+
+    </LinearLayout>
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/progress_view"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_normal" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/badge_view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/share_to_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/share_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="分享到"
+                android:textColor="@color/gray_97"
+                android:textSize="@dimen/text_size_24" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/share_text"
+                android:src="@mipmap/dotted_line" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/share_text"
+                android:src="@mipmap/dotted_line" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/wechat_img"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_margin="13dp"
+                android:src="@mipmap/wechat" />
+
+            <ImageView
+                android:id="@+id/wechat_moment_img"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_margin="13dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@mipmap/wechat_zone" />
+
+            <ImageView
+                android:id="@+id/sina_weibo_img"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_margin="13dp"
+                android:src="@mipmap/weibo" />
+
+            <ImageView
+                android:id="@+id/qq_img"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_margin="13dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:src="@mipmap/qq" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

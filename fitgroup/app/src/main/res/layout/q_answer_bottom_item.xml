@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/say_bottom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bottom_blue_dialog"
+        android:gravity="center"
+        android:text="小Q吗？机器人也有名字呢"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_30" />
+</LinearLayout>

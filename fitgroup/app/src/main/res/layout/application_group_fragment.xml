@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <include
+        layout = "@layout/title_view"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/application_q" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="@string/application_group_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_24"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/o2_say"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/application_group_reason_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:background="@drawable/rounded_rectangle_white"
+        android:hint="@string/application_group_input_hint"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left|top"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_24"
+        android:textColor="@color/gray_97" />
+</LinearLayout>

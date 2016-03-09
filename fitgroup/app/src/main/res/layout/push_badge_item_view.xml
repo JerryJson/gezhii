@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="335dp"
+        android:layout_height="335dp"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/badge_bg_img"
+                android:layout_width="335dp"
+                android:layout_height="105dp"
+                android:src="@color/blue" />
+
+            <TextView
+                android:id="@+id/badge_text"
+                android:layout_width="81dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="160dp"
+                android:background="@mipmap/black_bottom"
+                android:gravity="center"
+                android:text="谷神星"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_28" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp">
+
+                <ImageView
+                    android:id="@+id/badge_img"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/white_circle_bg"
+                    android:padding="2dp"
+                    android:src="@mipmap/test" />
+
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/badge_information_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="243dp"
+            android:gravity="center"
+            android:text="人类发现的第一颗小行星,以农业女神克瑞斯(Ceres)命名"
+            android:textColor="@color/black_32"
+            android:textSize="@dimen/text_size_28" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/lock_shape" />
+
+            <TextView
+                android:id="@+id/unlock_condition_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="解锁条件:完善资料"
+                android:textColor="@color/gray_97"
+                android:textSize="@dimen/text_size_24" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

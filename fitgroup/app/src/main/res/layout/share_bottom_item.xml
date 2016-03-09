@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_80"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingBottom="24dp"
+        android:id="@+id/qrcode_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/save_picture_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="@string/save_qr_code"
+            android:textColor="@color/gray_97"
+            android:textSize="@dimen/text_size_28" />
+
+        <ImageView
+            android:id="@+id/qrcode_img"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            tools:src="@mipmap/qr_code_icon" />
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/my_group_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/black_3c"-->
+        <!--android:paddingBottom="15dp">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:background="@color/black" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/my_association_number_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginTop="22dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/text_size_26"-->
+            <!--tools:text="我的公会'darren'累计减脂" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/kg_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_marginTop="22dp"-->
+            <!--android:text="公斤"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/text_size_26" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/lose_weight_value_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@id/kg_text"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/text_size_54"-->
+            <!--tools:text="5" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/app_icon_img"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginBottom="24dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:src="@mipmap/rounded_app_icon" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:layout_toRightOf="@id/app_icon_img"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="轻元素 减肥健身公会"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/text_size_34" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="和认真的人一起,才能真的减肥"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/text_size_24" />-->
+        <!--</LinearLayout>-->
+
+
+    <!--</RelativeLayout>-->
+</LinearLayout>

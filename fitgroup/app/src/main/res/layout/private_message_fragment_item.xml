@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_normal"
+        android:background="@drawable/rounded_rectangle_white"
+        android:padding="@dimen/spacing_normal">
+
+        <FrameLayout
+            android:id="@+id/icon_layout"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true">
+
+            <com.gezhii.fitgroup.ui.view.RectImageView
+                android:id="@+id/icon"
+                style="@style/oval_img_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/unread_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/spacing_tiny"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:background="@drawable/oval_pink"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_24"
+            tools:text="3" />
+
+
+        <LinearLayout
+            android:id="@+id/message_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@id/unread_count"
+            android:layout_toRightOf="@id/icon_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_28"
+                tools:text="消息标题" />
+
+            <TextView
+                android:id="@+id/message_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_tiny"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/gray_97"
+                android:textSize="@dimen/text_size_24"
+                tools:text="消息内容" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+
+
+

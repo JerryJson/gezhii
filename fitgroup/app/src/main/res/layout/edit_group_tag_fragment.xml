@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_view" />
+
+    <com.gezhii.fitgroup.ui.view.TagsView
+        android:id="@+id/tags_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_normal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_normal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/tags_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_white"
+            android:padding="@dimen/spacing_small"
+            android:singleLine="true"
+            android:textColor="@color/gray_97"
+            android:textSize="@dimen/text_size_24"
+            tools:text="自定义标签" />
+
+        <ImageView
+            android:id="@+id/add_tag_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:src="@mipmap/add_primary" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

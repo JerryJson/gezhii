@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/above_line"
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gray_ea" />
+
+            <ImageView
+                android:id="@+id/gray_circle_img"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_below="@id/above_line"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/gray_circle" />
+
+
+            <View
+                android:id="@+id/below_line"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/gray_circle_img"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gray_ea" />
+
+            <TextView
+                android:id="@+id/the_day_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@id/gray_circle_img"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_28"
+                tools:text="第1天" />
+
+
+            <LinearLayout
+                android:id="@+id/daily_sport_task_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/gray_circle_img"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

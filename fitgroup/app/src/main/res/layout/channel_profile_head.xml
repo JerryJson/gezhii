@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.gezhii.fitgroup.ui.view.RectImageView
+                android:id="@+id/channel_profile_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                style="@style/icon_style_radius_2"
+                android:src="@mipmap/channel_icon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/channel_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:text="我的健康营养餐"
+                android:textColor="@color/black_32"
+                android:textSize="@dimen/text_size_34" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/channel_profile_follow_btn"
+                    android:layout_width="225dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/whether_follow_btn_bg"
+                    android:gravity="center"
+                    android:text="关注频道"
+                    android:textColor="@color/pink_ff"
+                    android:textSize="@dimen/text_size_30" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:id="@+id/channel_profile_desc"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:text="爱运动更爱健康美食，嗯~又到了“深夜放毒”的时间"
+        android:textColor="@color/gray_97"
+        android:textSize="@dimen/text_size_28" />
+
+
+    <RelativeLayout
+        android:id="@+id/channel_adv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/page_bg"
+        android:padding="12dp">
+
+        <com.gezhii.fitgroup.ui.view.RectImageView
+            android:id="@+id/channel_adv_img"
+            style="@style/adv_img_style_radius_4"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+</LinearLayout>

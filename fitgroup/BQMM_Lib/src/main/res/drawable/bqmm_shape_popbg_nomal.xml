@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ <?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    背景颜色设置为透明
+    <solid android:color="@color/pop_bg" />
+
+    <stroke
+        android:width="1px"
+        android:color="@color/pop_bg" />
+    <gradient
+        android:angle="90"
+        android:endColor="#c0ffffff"
+        android:startColor="#c0808080" 
+        /> 背景颜色渐变
+    描边
+    <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" /> 设置圆角
+</shape>
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape>
+            <corners android:radius="25dp" />
+            <gradient
+                android:angle="90"
+                android:endColor="#E4E4E4"
+                android:startColor="#999999"
+                android:type="linear" />
+        </shape>
+    </item>
+     <item
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp">
+        <shape>
+            <corners android:radius="5dp" />
+            <gradient
+                android:angle="90"
+                android:endColor="#CCFFFFFF"
+                android:startColor="#CCFFFFFF"
+                android:type="linear" />
+        </shape>
+    </item>
+</layer-list>

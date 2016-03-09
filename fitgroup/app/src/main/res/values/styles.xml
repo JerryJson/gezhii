@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="line_dash_style_gray_9b" parent="@style/DivLine">
+        <item name="line_mode">dash</item>
+        <item name="line_color">@color/gray_9b</item>
+    </style>
+    <style name="line_dash_style_gray_c8" parent="@style/DivLine">
+        <item name="line_mode">dash</item>
+        <item name="line_color">@color/gray_c8</item>
+    </style>
+    <style name="line_dash_style_white" parent="@style/DivLine">
+        <item name="line_mode">dash</item>
+        <item name="line_color">@color/white</item>
+    </style>
+
+    <style name="line_normal_style_white" parent="@style/DivLine">
+        <item name="line_mode">normal</item>
+        <item name="line_color">@color/white</item>
+    </style>
+
+    <style name="line_normal_style_black" parent="@style/DivLine">
+        <item name="line_mode">normal</item>
+        <item name="line_color">@color/black</item>
+    </style>
+
+    <style name="line_normal_style_gray_c8" parent="@style/DivLine">
+        <item name="line_mode">normal</item>
+        <item name="line_color">@color/gray_c8</item>
+    </style>
+
+    <style name="oval_img_style" parent="@style/DivRectImageView">
+        <item name="ri_is_oval">true</item>
+    </style>
+
+    <style name="MyDivRectImageViewNone" parent="@style/DivRectImageView">
+        <item name="ri_radius">0dip</item>
+    </style>
+
+    <style name="icon_style_radius_2" parent="@style/DivRectImageView">
+        <item name="ri_base_width">45</item>
+        <item name="ri_base_height">45</item>
+        <item name="ri_radius">2dip</item>
+    </style>
+
+    <style name="adv_img_style_radius_4" parent="@style/DivRectImageView">
+        <item name="ri_radius">4dip</item>
+    </style>
+</resources>

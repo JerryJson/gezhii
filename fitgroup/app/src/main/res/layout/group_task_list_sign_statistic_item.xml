@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/page_bg"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="15dp">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/rounded_rectangle_white"/>
+
+    <View
+        android:id="@+id/progress_bk_view"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/rounded_rectangle_blue_3a"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_32"
+            android:textSize="@dimen/text_size_30"
+            tools:text="每日1万步" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/task_complete_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_24"
+            android:textColor="@color/gray_97"
+            />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="6dp"
+            android:src="@mipmap/gray_small_arrow"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+
+</FrameLayout>

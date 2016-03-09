@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_view" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/group_chat_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:id="@+id/net_work_error_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_c8"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_small">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:src="@mipmap/network_error_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_small"
+                android:text="网络连接不可用"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_28" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/notice_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_ea"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                android:id="@+id/system_notice_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/spacing_small"
+                android:layout_weight="1"
+                android:textColor="@color/gray_9b"
+                android:textSize="@dimen/text_size_28"
+                tools:text="公告－请各位组员帮忙监督！发现广告，花几分钟，复制帖子地址链接，发送豆邮通知我！我见到会立刻删除！！！发广告的人会被我封禁！！ " />
+
+            <ImageView
+                android:id="@+id/system_notice_close_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/system_notice_close" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_add_task_hint_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="79dp"
+            android:background="@color/pink_ff"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/q2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="会长大人请带领我们共同前进"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_34" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="去添加公会每日打卡任务"
+                    android:textColor="@color/gray_fa"
+                    android:textSize="@dimen/text_size_28" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/white_small_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_signin_hint_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="79dp"
+            android:background="@color/pink_ff"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="51dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="8dp"
+                android:src="@mipmap/path" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="52dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="2dp"
+                android:src="@mipmap/q1" />
+
+            <TextView
+                android:id="@+id/group_signin_hint_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="33dp"
+                android:text="新人任务二：点击"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/signin_white" />
+
+            <TextView
+                android:id="@+id/group_signin_hint_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="打个卡"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_introduce_myself_layout"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:background="@color/purple_b2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="65dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginLeft="19dp"
+                android:src="@mipmap/q3" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="新人任务一：做个自我介绍"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_c8" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/page_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/spacing_tiny"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="@dimen/spacing_tiny">
+
+        <ImageView
+            android:id="@+id/sign_btn"
+            android:layout_width="24dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:src="@mipmap/signin_btn" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <com.melink.bqmmsdk.widget.Bqmm_Editview
+                    android:id="@+id/group_chat_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="bottom"
+                    android:inputType="textMultiLine"
+                    android:maxHeight="108dp"
+                    android:minHeight="35dp"
+                    android:paddingLeft="5dp" />
+
+                <CheckBox
+                    android:id="@+id/bqmm_check_box"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/selector_emoji_check_box"
+                    android:button="@null" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+
+
+        <com.melink.bqmmsdk.widget.Bqmm_SendButton
+            android:id="@+id/send_text_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:background="@drawable/rounded_rectangle_primary"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_26"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/send_image_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/group_chat_send_imgae" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/show_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="22dp"
+        android:paddingTop="25dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/signin_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/rounded_rectangle_gray_frame_bg_gray">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/sign_gray" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/sign"
+                android:textColor="@color/gray_97"
+                android:textSize="@dimen/text_size_24" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/photo_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/rounded_rectangle_gray_frame_bg_gray">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/photo_gray" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/photo"
+                android:textColor="@color/gray_97"
+                android:textSize="@dimen/text_size_24" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/camera_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/rounded_rectangle_gray_frame_bg_gray">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/camera_gray" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/camera"
+                android:textColor="@color/gray_97"
+                android:textSize="@dimen/text_size_24" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <com.melink.bqmmsdk.ui.keyboard.Bqmm_Keyboard
+        android:id="@+id/bqmm_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:visibility="gone" />
+
+</LinearLayout>
